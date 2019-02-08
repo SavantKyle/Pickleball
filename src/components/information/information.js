@@ -21,7 +21,7 @@ const information = () => {
                         <h3><strong>Tournament Director</strong></h3>
                         <p>
                             Kyle Savant <br />
-                            <a href="mailto:kyle.savant@batonrougepickleball.com"><i className="fa fa-envelope-o"> Email Kyle</i></a> | &nbsp;
+                            <a href="mailto:kyle.savant@outlook.com"><i className="fa fa-envelope-o"> Email Kyle</i></a> | &nbsp;
                         <a href="tel:1-225-223-8809"><i className="fa fa-mobile-phone"></i> 225-223-8809</a>
                         </p>
                     </div>

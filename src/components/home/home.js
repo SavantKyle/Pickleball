@@ -18,8 +18,9 @@ const home = (props) => {
                 </p>
                 <br />
                 <p className="text-center">
-                    Registration will be opening shortly.  If you would like to get notified once registration is open please
-                    email <a href="mailto:kyle.savant@batonrougepickleball.com">kyle.savant@batonrougepickleball.com</a>.
+                    Registration will be opening shortly. Projected date of registration opening is February 15th.
+                    If you would like to get notified once registration is open please
+                    email <a href="mailto:kyle.savant@outlook.com">kyle.savant@outlook.com</a>.
                 </p>
             </div >
         </div >
