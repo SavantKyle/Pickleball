@@ -11,7 +11,7 @@ import RegistrationPage from './components/register/register';
 // import PaymentSuccessPage from './Components/PaymentSuccess/PaymentSuccessPage';
 
 class App extends React.Component {
-    render() { 
+    render() {
         return (
             <StripeProvider apiKey={STRIPE_PUBLISHABLE}>
                 <Router>

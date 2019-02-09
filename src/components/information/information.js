@@ -113,7 +113,7 @@ const information = () => {
                     </h3>
                     <p>
                         AGES: [18-39], [40-49], [50-59], [60-65], [66-70], [70+] <br />
-                        *Must play in the age group of the youngest team member
+                        *Must play in the age group of the youngest team member (age as of 12/31/2019)
                     </p>
                     <p>
                         SKILL: 3.0, 3.5, 4.0, Open (4.5 and above) <br />
