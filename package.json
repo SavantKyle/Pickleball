@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "http://localhost:51240/",
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^3.4.0",
     "font-awesome": "^4.7.0",
