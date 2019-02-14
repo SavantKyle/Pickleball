@@ -14,6 +14,7 @@ export class registerForm extends Component {
         ratingDoubles: '',
         event: '',
         entryPrice: 0,
+        crawfishGuestCount: 0,
         crawfishGuestPrice: 0,
         totalPrice: 0,
         showPrice: false,
@@ -25,7 +26,7 @@ export class registerForm extends Component {
         doublesLastName: '',
         doublesPhone: '',
         showDoublesSections: false,
-        disablePaymentButton: false, 
+        disablePaymentButton: false,
         success: 'false'
     }
 
@@ -151,9 +152,10 @@ export class registerForm extends Component {
     }
 
     onCrawfishGuestChange = (event) => {
+        let crawfishGuestCount = event.target.value;
         let crawfishPrice = event.target.value * 20;
         let newTotalPrice = this.state.entryPrice + crawfishPrice;
-        this.setState({ totalPrice: newTotalPrice, crawfishGuestPrice: crawfishPrice });
+        this.setState({ totalPrice: newTotalPrice, crawfishGuestCount: crawfishGuestCount, crawfishGuestPrice: crawfishPrice });
     }
 
     onKeyPress(event) {
@@ -167,14 +169,22 @@ export class registerForm extends Component {
         event.preventDefault();
         this.setState({ disablePaymentButton: true });
 
-        this.props.stripe.createToken().then(({ token }) => {
-            console.log('Received Stripe token:', token);
-            let playerInfo = {...this.state};
+        // async submit(ev) {
+        //let { token } = this.props.stripe.createToken({ name: this.props.firstName }).then();
+        //console.log('Received Stripe token:', token);
+        // this.props.stripe.createToken({ name: this.state.firstName }).then(({ token }) => {
+        //     //console.log('Received Stripe token:', token);
+        //     console.log('Id:', token.id);
+        // });
+
+        this.props.stripe.createToken({ name: this.state.firstName }).then(({ token }) => {
+            console.log('Received Stripe token id:', token.id);
+            let playerInfo = { ...this.state };
 
             const payload = {
                 playerInfo,
                 stripePaymentRequest: {
-                    amount: this.state.totalPrice * 100,
+                    amount: this.state.totalPrice,
                     description: `${this.state.firstName} ${this.state.lastName} - (${this.state.gender} Doubles:${this.state.ratingDoubles} Mixed:${this.state.ratingMixed})`,
                     receiptEmail: this.state.email,
                     tokenId: token.id
@@ -182,14 +192,15 @@ export class registerForm extends Component {
             };
 
             console.log(payload);
-            axios.post('https://batonrougepickleball.com/api/register/register', payload)
+            // axios.post('https://batonrougepickleball.com/api/register/register', payload)
+            axios.post('/api/register/RegisterPlayer', payload)
                 .then(response =>
-                    this.setState({ success: true, disabled: false })
+                    this.setState({ success: true, disablePaymentButton: false })
                 )
                 .catch(error => {
-                    this.setState({ disabled: false });
+                    this.setState({ disablePaymentButton: false });
                     console.log(error)
-                    alert(`${error}. Something went wrong with your payment. If this continues to occur please notify Kyle at kyle.savant@outlook.com or text at 225-223-8809.`)
+                    alert(`${error}. Something went wrong with your payment. If this continues to occur please notify Kyle at kyle.savant@batonrougepickleball.com or text at 225-223-8809.`)
                 });
         });
     }

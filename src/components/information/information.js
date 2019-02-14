@@ -116,7 +116,7 @@ const information = () => {
                         *Must play in the age group of the youngest team member (age as of 12/31/2019)
                     </p>
                     <p>
-                        SKILL: 3.0, 3.5, 4.0, Open (4.5 and above) <br />
+                        SKILL: 2.5, 3.0, 3.5, 4.0, Open (4.5 and above) <br />
                         *Must play in the skill level of the highest rated team member
                     </p>
                     <p>Age groupings and skill levels may be combined at the discretion of the Tournament Director</p>

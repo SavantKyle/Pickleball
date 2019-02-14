@@ -15,17 +15,18 @@ const navigation = () => {
                 <li><NavLink activeStyle={style} to="/cause"><span className="fa fa-heartbeat"></span> The Cause</NavLink></li>
                 <li><NavLink activeStyle={style} to="/sponsors"><span className="fa fa-star"></span> Sponsors</NavLink></li>
                 <li><NavLink activeStyle={style} to="/information"><span className="fa fa-info-circle"></span> Rules & Info</NavLink></li>
-                <li><NavLink activeStyle={style} to="/register"><span className="fa fa-check-square-o"></span> Register</NavLink></li>
-                {/* <li className="disabled"><a href="\"><span className="fa fa-check-square-o"></span> Register</a></li> */}
-                {/* <a><span className="fa fa-check-square-o"></span> Register</a></li> */}
-                <li className="disabled">
-                    {/* <a href="http://www.facebook.com/groups/crawfishcuptennis" rel="noopener noreferrer" target="_blank">
-                        <span className="fa fa-facebook-square"></span> Follow Us
-                    </a> */}
-                    <a href="\" rel="noopener noreferrer">
+                {/* <li><NavLink activeStyle={style} to="/register"><span className="fa fa-check-square-o"></span> Register</NavLink></li> */}
+                <li className="disabled"><a href="\"><span className="fa fa-check-square-o"></span> Register</a></li>
+                <li>
+                    <a href="https://www.facebook.com/crawfishcuppickleball/" rel="noopener noreferrer" target="_blank">
                         <span className="fa fa-facebook-square"></span> Follow Us
                     </a>
                 </li>
+                {/* <li className="disabled"></li>
+                    <a href="\" rel="noopener noreferrer">
+                        <span className="fa fa-facebook-square"></span> Follow Us
+                    </a> 
+                </li>*/}
             </ul>
         </nav >
     );

@@ -2,7 +2,7 @@
   "name": "pickleball",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:51240/",
+  "proxy": "http://localhost:52745/",
   "dependencies": {
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
