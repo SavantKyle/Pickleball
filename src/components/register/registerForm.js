@@ -192,8 +192,8 @@ export class registerForm extends Component {
             };
 
             console.log(payload);
-            // axios.post('https://batonrougepickleball.com/api/register/register', payload)
-            axios.post('/api/register/RegisterPlayer', payload)
+            axios.post('https://batonrougepickleball.com/api/register/RegisterPlayer', payload)
+                // axios.post('/api/register/RegisterPlayer', payload)
                 .then(response =>
                     this.setState({ success: true, disablePaymentButton: false })
                 )
