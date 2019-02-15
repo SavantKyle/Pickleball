@@ -8,7 +8,7 @@ import CausePage from './components/cause/cause';
 import InformationPage from './components/information/information';
 import SponsorPage from './components/sponsors/sponsors';
 import RegistrationPage from './components/register/register';
-// import PaymentSuccessPage from './Components/PaymentSuccess/PaymentSuccessPage';
+import PaymentSuccessPage from './components/success/success';
 
 class App extends React.Component {
     render() {
@@ -26,6 +26,7 @@ class App extends React.Component {
                                 <Route path="/sponsors" component={SponsorPage} />
                                 <Route path="/information" component={InformationPage} />
                                 <Route path="/register" component={RegistrationPage} />
+                                <Route path="/success" component={PaymentSuccessPage} />
                                 <Route path="/" render={() => <Redirect to="/home" />} />
                             </Switch>
                         </div>
