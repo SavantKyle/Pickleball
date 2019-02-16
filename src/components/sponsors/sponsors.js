@@ -1,14 +1,14 @@
 import React from 'react';
 import {
-    kickstandsKitchenLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, flemingsLogo, onixLogo
+    tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, flemingsLogo, onixLogo
 } from '../../assets/logos';
 
 const sponsors = () => {
     const styles = {
-        kickstands: { width: "200px" },
+        tChews: { width: "325px" },
         flemings: { width: "400px" },
         raisingCanes: { width: "300px", marginTop: "40px" },
-        chimes: { width: "350px", marginTop: "40px" },
+        chimes: { width: "375px", marginTop: "10px" },
         louisianaFishFry: { width: "300px", marginTop: "20px" },
         coke: { width: "300px", marginTop: "50px", marginBottom: "40px" }, 
         onix: { width: "600px" }
@@ -37,8 +37,8 @@ const sponsors = () => {
                 <div className="panel-body">
                     <div className="col-md-12">
                         <div className="col-md-4">
-                            <a href="https://www.facebook.com/Kickstandskitchen/" target="_blank" rel="noopener noreferrer">
-                                <img src={kickstandsKitchenLogo} alt="" style={styles.kickstands} className="img-responsive center-block" />
+                            <a href="http://www.tchews.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={tChewsLogo} alt="" style={styles.tChews} className="img-responsive center-block" />
                             </a>
                         </div>
                         <div className="col-md-4">

@@ -1,4 +1,4 @@
-import kickstandsKitchenLogo from './kickstandsKitchenLogo.png';
+import tChewsLogo from './tChewsLogo.jpg';
 // import sushiMasaLogo from './sushiMasaLogo.jpg';
 // import theLondonerLogo from './theLondonerLogo.jpg';
 // import pinnacleLogo from './pinnacleLogo.jpg';
@@ -22,7 +22,7 @@ import flemingsLogo from './Flemings.png';
 import onixLogo from './OnixLogo.jpg'; 
 
 export { 
-    kickstandsKitchenLogo, 
+    tChewsLogo, 
     // sushiMasaLogo, 
     // theLondonerLogo, 
     // pinnacleLogo, 
