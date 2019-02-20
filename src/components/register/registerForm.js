@@ -238,7 +238,7 @@ export class registerForm extends Component {
 
             console.log(payload);
             axios.post('https://batonrougepickleball.com/webapi/api/register/RegisterPlayer', payload)
-            //axios.post('http://localhost:52745/api/Register/RegisterPlayer', payload)
+                //axios.post('http://localhost:52745/api/Register/RegisterPlayer', payload)
                 .then(response =>
                     this.setState({ success: true, disablePaymentButton: false })
                 )
@@ -397,9 +397,9 @@ export class registerForm extends Component {
                     }
                     {
                         !this.state.showPrice ? null :
-                            <div className="text-center">
+                            <div className="text-center">                                
                                 <h3>Crawfish Guests ($20 Per)</h3>
-
+                                <h4 className="text-muted">NOTE: Players eat free but may invite friends/family to the crawfish boil as guests</h4>
                                 <input type="number" className="form-control text-center" id="crawfishGuests" placeholder="How many guests will you have?" onChange={this.onCrawfishGuestChange} onKeyPress={this.onKeyPress} />
                                 <small className="text-muted">Need to know so we have enough food and drinks for non-players</small>
                             </div>
