@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, flemingsLogo, onixLogo
+    tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, flemingsLogo, onixLogo, natashaEngleLogo, americanFactoryDirectLogo
 } from '../../assets/logos';
 
 const sponsors = () => {
@@ -10,8 +10,10 @@ const sponsors = () => {
         raisingCanes: { width: "300px", marginTop: "40px" },
         chimes: { width: "375px", marginTop: "10px" },
         louisianaFishFry: { width: "300px", marginTop: "20px" },
-        coke: { width: "300px", marginTop: "50px", marginBottom: "40px" }, 
-        onix: { width: "600px" }
+        coke: { width: "300px", marginTop: "50px", marginBottom: "40px" },
+        onix: { width: "600px" },
+        natashaEngle: { width: "400px", marginTop: "0px" },
+        americanFactoryDirect: { width: "550px", marginTop: "100px" }
     }
 
     return (
@@ -58,7 +60,16 @@ const sponsors = () => {
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Bronze Level Sponsors</h2>
                 <div className="panel-body">
                     <div className="col-md-12">
-
+                        <div className="col-md-6">
+                            <a href="http://www.natashaengle.com" target="_blank" rel="noopener noreferrer">
+                                <img src={natashaEngleLogo} alt="" style={styles.natashaEngle} class="img-responsive center-block" />
+                            </a>
+                        </div>
+                        <div className="col-md-6">
+                            <a href="http://www.afd-furniture.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={americanFactoryDirectLogo} alt="" style={styles.americanFactoryDirect} class="img-responsive center-block" />
+                            </a>
+                        </div>
                     </div>
                     <div className="col-md-12">
 
