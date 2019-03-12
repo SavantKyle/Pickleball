@@ -13,7 +13,7 @@ const sponsors = () => {
         onix: { width: "550px", marginTop: "25px" },
         natashaEngle: { width: "400px", marginTop: "0px" },
         americanFactoryDirect: { width: "550px", marginTop: "100px" },
-        superiorConstruction: { width: "600px" }
+        superiorConstruction: { width: "1000px" }
     }
 
     return (
