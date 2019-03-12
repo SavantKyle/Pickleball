@@ -1,7 +1,7 @@
 import tChewsLogo from './tChewsLogo.jpg';
 // import sushiMasaLogo from './sushiMasaLogo.jpg';
 // import theLondonerLogo from './theLondonerLogo.jpg';
-// import pinnacleLogo from './pinnacleLogo.jpg';
+import superiorConstructionLogo from './superiorConstructionLogo.jpg';
 import raisingCanesLogo from './RaisingCanes.png';
 import louisianaFishFryLogo from './louisianaFishFryLogo.jpg';
 import chimesLogo from './TheChimes.png';
@@ -25,7 +25,7 @@ export {
     tChewsLogo, 
     // sushiMasaLogo, 
     // theLondonerLogo, 
-    // pinnacleLogo, 
+    superiorConstructionLogo, 
     raisingCanesLogo, 
     louisianaFishFryLogo, 
     chimesLogo, 

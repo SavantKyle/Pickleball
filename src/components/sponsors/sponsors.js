@@ -1,19 +1,19 @@
 import React from 'react';
 import {
-    tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, flemingsLogo, onixLogo, natashaEngleLogo, americanFactoryDirectLogo
+    tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, onixLogo, natashaEngleLogo, americanFactoryDirectLogo, superiorConstructionLogo
 } from '../../assets/logos';
 
 const sponsors = () => {
     const styles = {
         tChews: { width: "325px" },
-        flemings: { width: "400px" },
         raisingCanes: { width: "300px", marginTop: "40px" },
         chimes: { width: "375px", marginTop: "10px" },
         louisianaFishFry: { width: "300px", marginTop: "20px" },
         coke: { width: "300px", marginTop: "50px", marginBottom: "40px" },
-        onix: { width: "600px" },
+        onix: { width: "550px", marginTop: "25px" },
         natashaEngle: { width: "400px", marginTop: "0px" },
-        americanFactoryDirect: { width: "550px", marginTop: "100px" }
+        americanFactoryDirect: { width: "550px", marginTop: "100px" },
+        superiorConstruction: { width: "600px" }
     }
 
     return (
@@ -28,9 +28,9 @@ const sponsors = () => {
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Presenting Sponsors</h2>
                 <div className="panel-body">
                     <div className="col-md-12">
-                        <a href="https://www.onixpickleball.com" target="_blank" rel="noopener noreferrer">
-                            <img src={onixLogo} alt="" style={styles.onix} className="img-responsive center-block" />
-                        </a>
+                        {/* <a href="/" target="_blank" rel="noopener noreferrer"> */}
+                            <img src={superiorConstructionLogo} alt="" style={styles.superiorConstruction} className="img-responsive center-block" />
+                        {/* </a> */}
                     </div>
                 </div>
             </div>
@@ -44,8 +44,8 @@ const sponsors = () => {
                             </a>
                         </div>
                         <div className="col-md-4">
-                            <a href="https://www.flemingssteakhouse.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={flemingsLogo} alt="" style={styles.flemings} class="img-responsive center-block" />
+                            <a href="https://www.onixpickleball.com" target="_blank" rel="noopener noreferrer">
+                                <img src={onixLogo} alt="" style={styles.onix} className="img-responsive center-block" />
                             </a>
                         </div>
                         <div className="col-md-4">
