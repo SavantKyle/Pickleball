@@ -15,10 +15,11 @@ const navigation = () => {
                 <li><NavLink activeStyle={style} to="/cause"><span className="fa fa-heartbeat"></span> The Cause</NavLink></li>
                 <li><NavLink activeStyle={style} to="/sponsors"><span className="fa fa-star"></span> Sponsors</NavLink></li>
                 <li><NavLink activeStyle={style} to="/information"><span className="fa fa-info-circle"></span> Rules & Info</NavLink></li>
+                {/* <li><NavLink activeStyle={style} to="/looking"><span className="fa fa-search"></span> Need a Partner</NavLink></li> */}
                 <li><NavLink activeStyle={style} to="/register"><span className="fa fa-check-square-o"></span> Register</NavLink></li>
                 {/* <li className="disabled"><a href="\"><span className="fa fa-check-square-o"></span> Register</a></li> */}
                 <li>
-                    <a href="https://www.facebook.com/crawfishcuppickleball/" rel="noopener noreferrer" target="_blank">
+                    <a href="https://www.facebook.com/groups/1872560139539366/?source_id=351432462368802" rel="noopener noreferrer" target="_blank">
                         <span className="fa fa-facebook-square"></span> Follow Us
                     </a>
                 </li>

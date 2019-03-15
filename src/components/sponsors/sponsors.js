@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, onixLogo, natashaEngleLogo, americanFactoryDirectLogo, superiorConstructionLogo
+    tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, onixLogo, natashaEngleLogo, americanFactoryDirectLogo, superiorConstructionLogo, flemingsLogo
 } from '../../assets/logos';
 
 const sponsors = () => {
@@ -13,7 +13,8 @@ const sponsors = () => {
         onix: { width: "550px", marginTop: "25px" },
         natashaEngle: { width: "400px", marginTop: "0px" },
         americanFactoryDirect: { width: "550px", marginTop: "100px" },
-        superiorConstruction: { width: "1000px" }
+        superiorConstruction: { width: "1000px" },
+        flemings: { width: "375px", marginTop: "15px" }
     }
 
     return (
@@ -29,8 +30,18 @@ const sponsors = () => {
                 <div className="panel-body">
                     <div className="col-md-12">
                         {/* <a href="/" target="_blank" rel="noopener noreferrer"> */}
-                            <img src={superiorConstructionLogo} alt="" style={styles.superiorConstruction} className="img-responsive center-block" />
+                        <img src={superiorConstructionLogo} alt="" style={styles.superiorConstruction} className="img-responsive center-block" />
                         {/* </a> */}
+                    </div>
+                </div>
+            </div>
+            <div className="panel panel-primary text-center">
+                <h2 className="panel-heading" style={{ margin: "0px" }}>Tournament Balls and Player Gifts Donated by ONIX</h2>
+                <div className="panel-body">
+                    <div className="col-md-12">
+                        <a href="https://www.onixpickleball.com" target="_blank" rel="noopener noreferrer">
+                            <img src={onixLogo} alt="" style={styles.onix} className="img-responsive center-block" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -44,8 +55,8 @@ const sponsors = () => {
                             </a>
                         </div>
                         <div className="col-md-4">
-                            <a href="https://www.onixpickleball.com" target="_blank" rel="noopener noreferrer">
-                                <img src={onixLogo} alt="" style={styles.onix} className="img-responsive center-block" />
+                            <a href="https://www.flemingssteakhouse.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={flemingsLogo} alt="" style={styles.flemings} className="img-responsive center-block" />
                             </a>
                         </div>
                         <div className="col-md-4">
@@ -76,14 +87,14 @@ const sponsors = () => {
                     </div>
                 </div>
             </div>
-            <div className="panel panel-info text-center">
+            {/* <div className="panel panel-info text-center">
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Other Sponsors</h2>
                 <div className="panel-body">
                     <div className="col-md-12">
 
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="panel panel-success text-center">
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Food and Refreshments Provided By</h2>
                 <div className="panel-body">

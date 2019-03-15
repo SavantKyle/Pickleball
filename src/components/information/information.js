@@ -50,9 +50,28 @@ const information = () => {
                 </div>
                 <div className="col-md-12">
                     <h3><strong>Lodging and Accommodations</strong></h3>
-                    <p>
-                        **COMING SOON**
-                    </p>
+                    <div className="col-md-3"></div>
+                    <div className="col-md-3">
+                        <p>
+                            <i>Siegen Inn</i> <br />
+                            <a href="tel:1-225-366-6776"><i className="fa fa-phone"></i> 225-366-6776</a> <br />
+                            Mention "Crawfish Cup" <br />
+                            $70 + tax (first come first served) <br />
+                            <a target="_blank" rel="noopener noreferrer" className="fa fa-map" href="https://www.google.com/maps/place/Siegen+Inn/@30.3880554,-91.0631333,17z/data=!3m1!4b1!4m5!3m4!1s0x8626a4d5a9bd7247:0x2b911c1f135fa67d!8m2!3d30.3880508!4d-91.0609446"> 10707 Honore Ln | Baton Rouge, LA | 70809 </a> <br />
+                        </p>
+                    </div>
+                    <div className="col-md-3">
+                        <p>
+                            <i>Home 2 Suites</i> <br />
+                            <a href="tel:1-225-223-6788"><i className="fa fa-phone"></i> 225-223-6788</a> <br />
+                            Mention "Crawfish Cup" <br />
+                            $110 + tax until April 8th <br />
+                            Holding 5 Kings and 10 Queens <br />
+                            <a target="_blank" rel="noopener noreferrer" className="fa fa-map" href="https://www.google.com/maps/place/Home2+Suites+by+Hilton+Baton+Rouge/@30.3853535,-91.0599843,15.08z/data=!4m8!1m2!2m1!1shome+2+suites!3m4!1s0x8626a4d3b90421a3:0xa15c2af73d91aab!8m2!3d30.3926632!4d-91.0615911"> 10800 Siegen Holiday Cir | Baton Rouge, LA | 70809 </a> <br />
+                        </p>
+                    </div>
+                    <div className="col-md-3"></div>
+
                 </div>
                 <div className="col-md-12">
                     <h3><strong>Food / Drink</strong></h3>
@@ -81,7 +100,7 @@ const information = () => {
                 <div className="col-md-12">
                     <h3><strong>Player Gifts</strong></h3>
                     <p>
-                        All players will receive a player gift.
+                        All players will receive a player gift courtesy of ONIX Pickleball.
                     </p>
                 </div>
                 <div className="col-md-12">
