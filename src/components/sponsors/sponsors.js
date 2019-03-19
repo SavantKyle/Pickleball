@@ -1,20 +1,21 @@
 import React from 'react';
 import {
-    tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, onixLogo, natashaEngleLogo, americanFactoryDirectLogo, superiorConstructionLogo, flemingsLogo
+    tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, onixLogo, natashaEngleLogo, americanFactoryDirectLogo, superiorConstructionLogo, flemingsLogo, transformyxLogo
 } from '../../assets/logos';
 
 const sponsors = () => {
     const styles = {
         tChews: { width: "325px" },
         raisingCanes: { width: "300px", marginTop: "40px" },
-        chimes: { width: "375px", marginTop: "10px" },
+        chimes: { width: "375px", marginTop: "20px" },
         louisianaFishFry: { width: "300px", marginTop: "20px" },
         coke: { width: "300px", marginTop: "50px", marginBottom: "40px" },
         onix: { width: "550px", marginTop: "25px" },
         natashaEngle: { width: "400px", marginTop: "0px" },
         americanFactoryDirect: { width: "550px", marginTop: "100px" },
-        superiorConstruction: { width: "1000px" },
-        flemings: { width: "375px", marginTop: "15px" }
+        superiorConstruction: { width: "600px", marginTop: "20px" },
+        flemings: { width: "375px", marginTop: "15px" },
+        transformyx: { width: "1000px" }
     }
 
     return (
@@ -29,9 +30,9 @@ const sponsors = () => {
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Presenting Sponsors</h2>
                 <div className="panel-body">
                     <div className="col-md-12">
-                        {/* <a href="/" target="_blank" rel="noopener noreferrer"> */}
-                        <img src={superiorConstructionLogo} alt="" style={styles.superiorConstruction} className="img-responsive center-block" />
-                        {/* </a> */}
+                        <a href="http://www.transformyx.com/" target="_blank" rel="noopener noreferrer">
+                            <img src={transformyxLogo} alt="" style={styles.transformyx} className="img-responsive center-block" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -55,15 +56,24 @@ const sponsors = () => {
                             </a>
                         </div>
                         <div className="col-md-4">
+                            {/* <a href="/" target="_blank" rel="noopener noreferrer"> */}
+                            <img src={superiorConstructionLogo} alt="" style={styles.superiorConstruction} className="img-responsive center-block" />
+                            {/* </a> */}
+                        </div>
+                        <div className="col-md-4">
                             <a href="https://www.flemingssteakhouse.com/" target="_blank" rel="noopener noreferrer">
                                 <img src={flemingsLogo} alt="" style={styles.flemings} className="img-responsive center-block" />
                             </a>
                         </div>
+                    </div>
+                    <div className="col-md-12">
+                        <div className="col-md-4"></div>                        
                         <div className="col-md-4">
                             <a href="https://www.thechimes.com/" target="_blank" rel="noopener noreferrer">
                                 <img src={chimesLogo} alt="" style={styles.chimes} class="img-responsive center-block" />
                             </a>
                         </div>
+                        <div className="col-md-4"></div>
                     </div>
                 </div>
             </div>

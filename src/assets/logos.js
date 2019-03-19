@@ -9,7 +9,7 @@ import cokeLogo from './Coca-Cola.png';
 // import mansursLogo from './Mansurs.png'; 
 // import ruffinosLogo from './Ruffinos.jpg';
 import flemingsLogo from './Flemings.png'; 
-// import transformyxLogo from './Transformyx.png'; 
+import transformyxLogo from './Transformyx.png'; 
 import americanFactoryDirectLogo from './americanFactoryDirectLogo.png'; 
 // import calandroLogo from './calandroLogo.png'; 
 import natashaEngleLogo from './natashaEngleLogo_forWeb.png'; 
@@ -33,7 +33,7 @@ export {
     // mansursLogo, 
     // ruffinosLogo, 
     flemingsLogo,
-    // transformyxLogo, 
+    transformyxLogo, 
     americanFactoryDirectLogo, 
     // calandroLogo, 
     natashaEngleLogo, 
