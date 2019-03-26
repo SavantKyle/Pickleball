@@ -193,12 +193,12 @@ const information = () => {
                     <p>
                         <i><u> Before April 1st </u></i> <br />
                         Playing only one event: $55 per player <br />
-                        Playing both events: $65 per player
+                        Playing both events: $60 per player
                     </p>
                     <p>
                         <i><u> April 1st and after </u></i> <br />
                         Playing only one event: $65 per player <br />
-                        Playing both events: $75 per player
+                        Playing both events: $70 per player
                     </p>
                 </div>
                 <div className="col-md-12">

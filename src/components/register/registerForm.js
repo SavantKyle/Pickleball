@@ -177,8 +177,8 @@ export class registerForm extends Component {
 
     onEventChange = (event) => {
         let newVal, newPrice, doubles, mixed;
-        let oneEventPrice = new Date() >= new Date('4/1/2019') ? 65 : 55;
-        let twoEventPrice = new Date() >= new Date('4/1/2019') ? 75 : 65;
+        let oneEventPrice = new Date() >= new Date('4/1/2019') ? 60 : 55;
+        let twoEventPrice = new Date() >= new Date('4/1/2019') ? 70 : 65;
         switch (event.target.id) {
             case "eventDoubles":
                 newVal = "Doubles";
@@ -238,7 +238,7 @@ export class registerForm extends Component {
 
             console.log(payload);
             axios.post('https://batonrougepickleball.com/webapi/api/register/RegisterPlayer', payload)
-                //axios.post('http://localhost:52745/api/Register/RegisterPlayer', payload)
+                //axios.post('/api/Register/RegisterPlayer', payload)
                 .then(response =>
                     this.setState({ success: true, disablePaymentButton: false })
                 )

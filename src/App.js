@@ -9,6 +9,7 @@ import InformationPage from './components/information/information';
 import SponsorPage from './components/sponsors/sponsors';
 import RegistrationPage from './components/register/register';
 import PaymentSuccessPage from './components/success/success';
+import LookingPage from './components/looking/looking'; 
 
 class App extends React.Component {
     render() {
@@ -26,6 +27,7 @@ class App extends React.Component {
                                 <Route path="/sponsors" component={SponsorPage} />
                                 <Route path="/information" component={InformationPage} />
                                 <Route path="/register" component={RegistrationPage} />
+                                <Route path="/looking" component={LookingPage} />
                                 <Route path="/success" component={PaymentSuccessPage} />
                                 <Route path="/" render={() => <Redirect to="/home" />} />
                             </Switch>
