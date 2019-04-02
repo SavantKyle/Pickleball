@@ -28,6 +28,7 @@ export class registerForm extends Component {
         doublesPartnerPhone: '',
         showDoublesSections: false,
         disablePaymentButton: false,
+        hasValidPromoCode: false, 
         success: false
     }
 
@@ -182,19 +183,19 @@ export class registerForm extends Component {
         switch (event.target.id) {
             case "eventDoubles":
                 newVal = "Doubles";
-                newPrice = oneEventPrice;
+                newPrice = this.state.hasValidPromoCode ? oneEventPrice - 5 : oneEventPrice;
                 doubles = true;
                 mixed = false;
                 break;
             case "eventMixed":
                 newVal = "Mixed";
-                newPrice = oneEventPrice;
+                newPrice = this.state.hasValidPromoCode ? oneEventPrice - 5 : oneEventPrice;
                 doubles = false;
                 mixed = true;
                 break;
             case "eventBoth":
                 newVal = "Both";
-                newPrice = twoEventPrice;
+                newPrice = this.state.hasValidPromoCode ? twoEventPrice - 5 : twoEventPrice;
                 doubles = true;
                 mixed = true;
                 break;
@@ -209,6 +210,20 @@ export class registerForm extends Component {
         let crawfishPrice = event.target.value * 20;
         let newTotalPrice = this.state.entryPrice + crawfishPrice;
         this.setState({ totalPrice: newTotalPrice, crawfishGuestCount: crawfishGuestCount, crawfishGuestPrice: crawfishPrice });
+    }
+
+    onPromoCodeChange = (event) => {
+        let adjustedPrice = this.state.totalPrice; 
+        let valid = false; 
+        if (event.target.value.trim().toLowerCase() === 'tennis') {
+            valid = true;
+            adjustedPrice = this.state.totalPrice - 5; 
+        } else if (this.state.totalPrice === 55 || this.state.totalPrice === 65) {
+            valid = false; 
+            adjustedPrice = this.state.totalPrice + 5; 
+        }
+
+        this.setState({ totalPrice: adjustedPrice, hasValidPromoCode: valid });
     }
 
     onKeyPress(event) {
@@ -397,30 +412,30 @@ export class registerForm extends Component {
                     }
                     {
                         !this.state.showPrice ? null :
-                            <div className="text-center">                                
-                                <h3>Crawfish Guests ($20 Per)</h3>
-                                <h4 className="text-muted">NOTE: Players eat free but may invite friends/family to the crawfish boil as guests</h4>
-                                <input type="number" className="form-control text-center" id="crawfishGuests" placeholder="How many guests will you have?" onChange={this.onCrawfishGuestChange} onKeyPress={this.onKeyPress} />
-                                <small className="text-muted">Need to know so we have enough food and drinks for non-players</small>
-                            </div>
-                    }
-                    {
-                        !this.state.showPrice ? null :
-                            <div className="text-center text-primary">
-                                <h3>
-                                    <strong>
-                                        Total: ${this.state.totalPrice}
-                                    </strong>
-                                </h3>
-                            </div>
-                    }
-                    {
-                        !this.state.showPrice ? null :
-                            <div className="form-group text-center">
-                                <label htmlhtmlFor="cardElement" className="text-muted">Credit or Debit Card</label>
-                                <div className="form-row col-md-offset-4 col-md-8 text-center">
-                                    <div className="form-row col-md-6" >
-                                        <CardElement id="cardElement" className="form-control text-center" />
+                            <div>
+                                <div className="text-center">
+                                    <h3>Crawfish Guests ($20 Per)</h3>
+                                    <h4 className="text-muted">NOTE: Players eat free but may invite friends/family to the crawfish boil as guests</h4>
+                                    <input type="number" className="form-control text-center" id="crawfishGuests" placeholder="How many guests will you have?" onChange={this.onCrawfishGuestChange} onKeyPress={this.onKeyPress} />
+                                    <small className="text-muted">Need to know so we have enough food and drinks for non-players</small>
+                                </div>
+                                <div className="text-center">
+                                    <h3>Promo Code</h3>
+                                    <input type="text" className="form-control text-center" id="promoCode" placeholder="Enter Promotional Code Here" onChange={this.onPromoCodeChange} onKeyPress={this.onKeyPress} />
+                                </div>
+                                <div className="text-center text-primary">
+                                    <h3>
+                                        <strong>
+                                            Total: ${this.state.totalPrice}
+                                        </strong>
+                                    </h3>
+                                </div>
+                                <div className="form-group text-center">
+                                    <label htmlhtmlFor="cardElement" className="text-muted">Credit or Debit Card</label>
+                                    <div className="form-row col-md-offset-4 col-md-8 text-center">
+                                        <div className="form-row col-md-6" >
+                                            <CardElement id="cardElement" className="form-control text-center" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
