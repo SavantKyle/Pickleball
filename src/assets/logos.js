@@ -1,6 +1,6 @@
 import tChewsLogo from './tChewsLogo.jpg';
 // import sushiMasaLogo from './sushiMasaLogo.jpg';
-// import theLondonerLogo from './theLondonerLogo.jpg';
+import theLondonerLogo from './theLondonerLogo.jpg';
 import superiorConstructionLogo from './superiorConstructionLogo.jpg';
 import raisingCanesLogo from './RaisingCanes.png';
 import louisianaFishFryLogo from './louisianaFishFryLogo.jpg';
@@ -11,20 +11,20 @@ import cokeLogo from './Coca-Cola.png';
 import flemingsLogo from './Flemings.png'; 
 import transformyxLogo from './Transformyx.png'; 
 import americanFactoryDirectLogo from './americanFactoryDirectLogo.png'; 
-// import calandroLogo from './calandroLogo.png'; 
+import crescentCrownLogo from './CrescentCrownLogo.jpg'; 
 import natashaEngleLogo from './natashaEngleLogo_forWeb.png'; 
 // import sonicLogo from './sonicLogo.png';
 // import republicFinanceLogo from './republicFinanceLogo_ForWeb.png';
-// import laMadeleineLogo from './LaMadeleineLogo_ForWeb.png';
+import laMadeleineLogo from './laMadeleineLogo.png';
 // import deltaPhysicalTherapyLogo from './DeltaPhysicalTherapyLogo_ForWeb.png'; 
-// import reginellisLogo from './ReginellisLogo_ForWeb.png'; 
+import reginellisLogo from './ReginellisLogo_ForWeb.png'; 
 // import miPadresLogo from './MiPadresLogo_ForWeb.png';
 import onixLogo from './OnixLogo.jpg'; 
 
 export { 
     tChewsLogo, 
     // sushiMasaLogo, 
-    // theLondonerLogo, 
+    theLondonerLogo, 
     superiorConstructionLogo, 
     raisingCanesLogo, 
     louisianaFishFryLogo, 
@@ -35,13 +35,13 @@ export {
     flemingsLogo,
     transformyxLogo, 
     americanFactoryDirectLogo, 
-    // calandroLogo, 
+    crescentCrownLogo, 
     natashaEngleLogo, 
     // sonicLogo, 
     // republicFinanceLogo, 
-    // laMadeleineLogo, 
+    laMadeleineLogo, 
     // deltaPhysicalTherapyLogo, 
-    // reginellisLogo, 
+    reginellisLogo, 
     // miPadresLogo
     onixLogo
 } 
