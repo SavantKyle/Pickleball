@@ -63,7 +63,7 @@ const information = () => {
         </div>
         <div className="col-md-12">
           <h3>
-            <strong>Registration Deadline</strong>
+            <strong>Final Registration Deadline</strong>
           </h3>
           <p>
             Wednesday, April 8th, 2020 @ 11:59pm [CST] <br />
@@ -103,7 +103,7 @@ const information = () => {
                 <i>Procrastinators</i>
               </h3>
               <i>
-                <u> March 1st and After </u>
+                <u> March 1st thru April 8th </u>
               </i>{" "}
               <br />
               $75 per player
@@ -148,14 +148,17 @@ const information = () => {
             <strong>Food / Drink</strong>
           </h3>
           <p>Fruits and donuts will be provided for breakfast each morning.</p>
-          <p>Crawfish boil will take place Saturday evening following play.</p>
+          <p>
+            Bottled water will be provided with additional full water coolers
+            for hydrating during the match.
+          </p>
           <p>
             A local restaurant (TBD) will serve lunch between the morning and
             afternoon sessions.
           </p>
           <p>
-            Bottled water will be provided with additional full water coolers
-            for hydrating during the match.
+            <strong>Crawfish boil</strong> will take place Saturday evening
+            following play.
           </p>
           <p>Soft drinks will be provided for the crawfish boil on Saturday.</p>
         </div>
