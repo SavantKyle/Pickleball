@@ -1,25 +1,28 @@
 import React from 'react';
 import {
-    tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, onixLogo, natashaEngleLogo, americanFactoryDirectLogo, superiorConstructionLogo, flemingsLogo, transformyxLogo, crescentCrownLogo, laMadeleineLogo, reginellisLogo, theLondonerLogo
+    onixLogo
+    // tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, 
+    // natashaEngleLogo, americanFactoryDirectLogo, superiorConstructionLogo, 
+    // flemingsLogo, transformyxLogo, crescentCrownLogo, laMadeleineLogo, reginellisLogo, theLondonerLogo
 } from '../../assets/logos';
 
 const sponsors = () => {
     const styles = {
-        tChews: { width: "325px" },
-        raisingCanes: { width: "300px", marginTop: "40px" },
-        chimes: { width: "375px", marginTop: "20px" },
-        louisianaFishFry: { width: "300px" },
-        coke: { width: "300px", marginTop: "50px", marginBottom: "40px" },
-        onix: { width: "550px", marginTop: "25px" },
-        natashaEngle: { width: "400px", marginTop: "0px" },
-        americanFactoryDirect: { width: "550px", marginTop: "20px" },
-        superiorConstruction: { width: "600px", marginTop: "50px" },
-        flemings: { width: "375px", marginTop: "15px" },
-        transformyx: { width: "1000px" },
-        crescent: { width: "175px" },
-        laMadeleine: { width: "300px", marginTop: "25px" },
-        reginelli: { width: "400px", marginTop: "40px" },
-        theLondoner: { width: "300px", marginTop: "20px" }
+        // tChews: { width: "325px" },
+        // raisingCanes: { width: "300px", marginTop: "40px" },
+        // chimes: { width: "375px", marginTop: "20px" },
+        // louisianaFishFry: { width: "300px" },
+        // coke: { width: "300px", marginTop: "50px", marginBottom: "40px" },
+        // onix: { width: "550px", marginTop: "25px" },
+        // natashaEngle: { width: "400px", marginTop: "0px" },
+        // americanFactoryDirect: { width: "550px", marginTop: "20px" },
+        // superiorConstruction: { width: "600px", marginTop: "50px" },
+        // flemings: { width: "375px", marginTop: "15px" },
+        // transformyx: { width: "1000px" },
+        // crescent: { width: "175px" },
+        // laMadeleine: { width: "300px", marginTop: "25px" },
+        // reginelli: { width: "400px", marginTop: "40px" },
+        // theLondoner: { width: "300px", marginTop: "20px" }
     }
 
     return (
@@ -32,16 +35,16 @@ const sponsors = () => {
             </div>
             <div className="panel panel-default text-center">
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Presenting Sponsors</h2>
-                <div className="panel-body">
+                {/*    <div className="panel-body">
                     <div className="col-md-12">
                         <a href="http://www.transformyx.com/" target="_blank" rel="noopener noreferrer">
                             <img src={transformyxLogo} alt="" style={styles.transformyx} className="img-responsive center-block" />
                         </a>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className="panel panel-primary text-center">
-                <h2 className="panel-heading" style={{ margin: "0px" }}>Tournament Balls and Player Gifts Donated by ONIX</h2>
+                <h2 className="panel-heading" style={{ margin: "0px" }}>Tournament Balls Provided by ONIX</h2>
                 <div className="panel-body">
                     <div className="col-md-12">
                         <a href="https://www.onixpickleball.com" target="_blank" rel="noopener noreferrer">
@@ -53,7 +56,7 @@ const sponsors = () => {
             <div className="panel panel-danger text-center">
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Rose Level Sponsors</h2>
                 <div className="panel-body">
-                    <div className="col-md-12">
+                    {/* <div className="col-md-12">
                         <div className="col-md-4">
                             <a href="https://www.facebook.com/Tchews/" target="_blank" rel="noopener noreferrer">
                                 <img src={tChewsLogo} alt="" style={styles.tChews} className="img-responsive center-block" />
@@ -68,7 +71,7 @@ const sponsors = () => {
                             <a href="https://www.flemingssteakhouse.com/" target="_blank" rel="noopener noreferrer">
                                 <img src={flemingsLogo} alt="" style={styles.flemings} className="img-responsive center-block" />
                             </a>
-                        </div>
+                        </div> 
                     </div>
                     <div className="col-md-12">
                         <div className="col-md-4"></div>
@@ -78,13 +81,13 @@ const sponsors = () => {
                             </a>
                         </div>
                         <div className="col-md-4"></div>
-                    </div>
+                    </div>  */}
                 </div>
             </div>
             <div className="panel panel-warning text-center">
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Bronze Level Sponsors</h2>
                 <div className="panel-body">
-                    <div className="col-md-12">
+                    {/* <div className="col-md-12">
                         <div className="col-md-6">
                             <a href="http://www.natashaengle.com" target="_blank" rel="noopener noreferrer">
                                 <img src={natashaEngleLogo} alt="" style={styles.natashaEngle} class="img-responsive center-block" />
@@ -98,7 +101,7 @@ const sponsors = () => {
                     </div>
                     <div className="col-md-12">
 
-                    </div>
+                    </div> */}
                 </div>
             </div>
             {/* <div className="panel panel-info text-center">
@@ -112,7 +115,7 @@ const sponsors = () => {
             <div className="panel panel-success text-center">
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Food and Refreshments Provided By</h2>
                 <div className="panel-body">
-                    <div className="col-md-12">
+                    {/* <div className="col-md-12">
                         <div className="col-md-4">
                             <a href="https://la.crescentcrown.com/" target="_blank" rel="noopener noreferrer">
                                 <img src={crescentCrownLogo} alt="" style={styles.crescent} class="img-responsive center-block" />
@@ -150,7 +153,7 @@ const sponsors = () => {
                                 <img src={cokeLogo} alt="" style={styles.coke} class="img-responsive center-block" />
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

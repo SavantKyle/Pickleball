@@ -178,24 +178,26 @@ export class registerForm extends Component {
 
     onEventChange = (event) => {
         let newVal, newPrice, doubles, mixed;
-        let oneEventPrice = new Date() >= new Date('4/1/2019') ? 60 : 55;
-        let twoEventPrice = new Date() >= new Date('4/1/2019') ? 70 : 65;
+        let eventPrice = new Date() <= new Date('1/15/2020') ? 55 
+        : new Date() > new Date('1/15/2020') && new Date() <= new Date('3/1/2020') ? 65
+        : 75;
+        // let twoEventPrice = new Date() >= new Date('4/1/2019') ? 70 : 65;
         switch (event.target.id) {
             case "eventDoubles":
                 newVal = "Doubles";
-                newPrice = this.state.hasValidPromoCode ? oneEventPrice - 5 : oneEventPrice;
+                newPrice = this.state.hasValidPromoCode ? eventPrice - 5 : eventPrice;
                 doubles = true;
                 mixed = false;
                 break;
             case "eventMixed":
                 newVal = "Mixed";
-                newPrice = this.state.hasValidPromoCode ? oneEventPrice - 5 : oneEventPrice;
+                newPrice = this.state.hasValidPromoCode ? eventPrice - 5 : eventPrice;
                 doubles = false;
                 mixed = true;
                 break;
             case "eventBoth":
                 newVal = "Both";
-                newPrice = this.state.hasValidPromoCode ? twoEventPrice - 5 : twoEventPrice;
+                newPrice = this.state.hasValidPromoCode ? eventPrice - 5 : eventPrice;
                 doubles = true;
                 mixed = true;
                 break;
@@ -218,7 +220,7 @@ export class registerForm extends Component {
         if (event.target.value.trim().toLowerCase() === 'tennis') {
             valid = true;
             adjustedPrice = this.state.totalPrice - 5; 
-        } else if (this.state.totalPrice === 55 || this.state.totalPrice === 65) {
+        } else if (this.state.totalPrice === 55 || this.state.totalPrice === 65 || this.state.totalPrice === 75) {
             valid = false; 
             adjustedPrice = this.state.totalPrice + 5; 
         }
