@@ -79,7 +79,7 @@ const information = () => {
                 <i>Super Early Bird</i>
               </h3>
               <i>
-                <u> January 15th Deadline </u>
+                <u> January 31st Deadline </u>
               </i>{" "}
               <br />
               $55 per player
@@ -103,7 +103,7 @@ const information = () => {
                 <i>Procrastinators</i>
               </h3>
               <i>
-                <u> March 1st thru April 8th </u>
+                <u> After February </u>
               </i>{" "}
               <br />
               $75 per player

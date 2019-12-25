@@ -19,7 +19,8 @@ import laMadeleineLogo from './laMadeleineLogo.png';
 // import deltaPhysicalTherapyLogo from './DeltaPhysicalTherapyLogo_ForWeb.png'; 
 import reginellisLogo from './ReginellisLogo_ForWeb.png'; 
 // import miPadresLogo from './MiPadresLogo_ForWeb.png';
-import onixLogo from './OnixLogo.jpg'; 
+import onixLogo from './OnixLogoWithDuraFast40.png'; 
+import mbPriceGeneralContractors from './MB_Price_Logo.png'; 
 
 export { 
     tChewsLogo, 
@@ -43,5 +44,6 @@ export {
     // deltaPhysicalTherapyLogo, 
     reginellisLogo, 
     // miPadresLogo
-    onixLogo
+    onixLogo, 
+    mbPriceGeneralContractors
 } 
