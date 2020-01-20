@@ -1,9 +1,10 @@
 import React from "react";
 import {
   onixLogo,
-  mbPriceGeneralContractors
+  mbPriceGeneralContractors, 
+  americanFactoryDirectLogo
   // tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo,
-  // natashaEngleLogo, americanFactoryDirectLogo, superiorConstructionLogo,
+  // natashaEngleLogo, superiorConstructionLogo,
   // flemingsLogo, transformyxLogo, crescentCrownLogo, laMadeleineLogo, reginellisLogo, theLondonerLogo
 } from "../../assets/logos";
 
@@ -15,7 +16,7 @@ const sponsors = () => {
     // louisianaFishFry: { width: "300px" },
     // coke: { width: "300px", marginTop: "50px", marginBottom: "40px" },
     // natashaEngle: { width: "400px", marginTop: "0px" },
-    // americanFactoryDirect: { width: "550px", marginTop: "20px" },
+    americanFactoryDirect: { width: "550px", marginTop: "20px" },
     // superiorConstruction: { width: "600px", marginTop: "50px" },
     // flemings: { width: "375px", marginTop: "15px" },
     // transformyx: { width: "1000px" },
@@ -109,6 +110,11 @@ const sponsors = () => {
           Bronze Level Sponsors
         </h2>
         <div className="panel-body">
+        <div className="col-md-12">
+                            <a href="http://www.afd-furniture.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={americanFactoryDirectLogo} alt="" style={styles.americanFactoryDirect} class="img-responsive center-block" />
+                            </a>
+                        </div>
           {/* <div className="col-md-12">
                         <div className="col-md-6">
                             <a href="http://www.natashaengle.com" target="_blank" rel="noopener noreferrer">

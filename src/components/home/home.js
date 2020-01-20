@@ -14,7 +14,7 @@ const home = (props) => {
                 </h1>
                 <br />
                 <p className="text-center">
-                    REGISTRATION IS NOW OPEN!!! 
+                    NOTICE: Date has been changed to April 25th, 2020 
                 </p>
                 <br /> 
                 <p className="text-center">
@@ -28,7 +28,7 @@ const home = (props) => {
                 <br />
                 <p className="text-center">
                     Thank you for your interest in the 2nd Annual Crawfish Cup Pickleball Tournament benefitting the American Cancer Society. <br /><br />
-                    This year's event is scheduled for <strong>April 18th, 2020</strong> in Baton Rouge, LA at a facility To Be Determined. <br /><br />
+                    This year's event is scheduled for <strong>April 25th, 2020</strong> in Baton Rouge, LA at The Legacy at Bonne Esperance. <br /><br />
                     The event will feature both Doubles and Mixed Doubles and will be age and skill based. <br /><br />
                     Additional tournament information and details can be found on the <NavLink to="/information">"Rules and Info"</NavLink> page. <br /><br />
                     We look forward to seeing you on the courts!!

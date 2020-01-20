@@ -46,12 +46,10 @@ const information = () => {
             <h3>
               <strong>Location</strong>
             </h3>
-            <p>
-              Baton Rouge, LA at a facility To Be Determined
-              {/* 
-                            Highland Road Tennis Center <br />
-                            <a target="_blank" rel="noopener noreferrer" className="fa fa-map" href="https://www.google.com/maps/place/Highland+Road+Tennis+Center/@30.3524809,-91.0748524,17z/data=!3m1!4b1!4m5!3m4!1s0x8626a55d62dd2253:0x4137cae0263416c0!8m2!3d30.3524809!4d-91.0726637"> 14024 Highland Rd | Baton Rouge, LA | 70810</a> 
-                            */}
+            <p>              
+                The Legacy <br />
+                <a target="_blank" rel="noopener noreferrer" className="fa fa-map" href="https://www.google.com/maps/place/The+Legacy+at+Bonne+Esperance/@30.4388643,-91.0573409,15z/data=!4m5!3m4!1s0x0:0x6e6a460a077cf89b!8m2!3d30.4388643!4d-91.0573409"> 1655 Sherwood Forest Blvd | Baton Rouge, LA | 70815</a> 
+                           
             </p>
           </div>
         </div>
@@ -59,7 +57,7 @@ const information = () => {
           <h3>
             <strong>Event Date</strong>
           </h3>
-          <p>April 18th, 2020</p>
+          <p>April 25th, 2020</p>
         </div>
         <div className="col-md-12">
           <h3>
@@ -224,7 +222,9 @@ const information = () => {
           </h3>
           <p>
             In the event of inclement weather, match format may be changed at
-            the discretion of the tournament director.
+            the discretion of the tournament director. 
+            <br/>
+            Absolute worst case, play will resume on Sunday morning to complete the tournament.  
           </p>
         </div>
         <div className="col-md-12">
