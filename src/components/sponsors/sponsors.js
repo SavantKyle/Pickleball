@@ -2,30 +2,25 @@ import React from "react";
 import {
   onixLogo,
   mbPriceGeneralContractors, 
-  americanFactoryDirectLogo
-  // tChewsLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo,
-  // natashaEngleLogo, superiorConstructionLogo,
-  // flemingsLogo, transformyxLogo, crescentCrownLogo, laMadeleineLogo, reginellisLogo, theLondonerLogo
+  americanFactoryDirectLogo, 
+  flemingsLogo,
+  kickstandsLogo, raisingCanesLogo, louisianaFishFryLogo, cokeLogo,
+  crescentCrownLogo,
+  hannahQLogo
 } from "../../assets/logos";
 
 const sponsors = () => {
   const styles = {
-    // tChews: { width: "325px" },
-    // raisingCanes: { width: "300px", marginTop: "40px" },
-    // chimes: { width: "375px", marginTop: "20px" },
-    // louisianaFishFry: { width: "300px" },
-    // coke: { width: "300px", marginTop: "50px", marginBottom: "40px" },
-    // natashaEngle: { width: "400px", marginTop: "0px" },
-    americanFactoryDirect: { width: "550px", marginTop: "20px" },
-    // superiorConstruction: { width: "600px", marginTop: "50px" },
-    // flemings: { width: "375px", marginTop: "15px" },
-    // transformyx: { width: "1000px" },
-    // crescent: { width: "175px" },
-    // laMadeleine: { width: "300px", marginTop: "25px" },
-    // reginelli: { width: "400px", marginTop: "40px" },
-    // theLondoner: { width: "300px", marginTop: "20px" }
+    kickstands: { width: 225 },
+    raisingCanes: { width: 300, marginTop: 40 },
+    louisianaFishFry: { width: 325 },
+    coke: { width: 300, marginTop: 50, marginBottom: 40 },
+    americanFactoryDirect: { width: 550, marginTop: 20 },
+    crescent: { width: 175 },
     onix: { width: 550 },
-    mbPrice: { width: 400 }
+    flemings: { width: 425, marginTop: 45 },
+    mbPrice: { width: 400, marginTop: 40 }, 
+    hannahQ: { width: 450, marginTop: 50 }
   };
 
   return (
@@ -73,36 +68,22 @@ const sponsors = () => {
         </h2>
         <div className="panel-body">
           <div className="col-md-12">
-            <a href="http://www.mbpricecontractors.com/" target="_blank" rel="noopener noreferrer">
-              <img src={mbPriceGeneralContractors} alt="" style={styles.mbPrice} className="img-responsive center-block"/>
-            </a>
+          <div className="col-md-4">
+                <a href="http://www.mbpricecontractors.com/" target="_blank" rel="noopener noreferrer">
+                  <img src={mbPriceGeneralContractors} alt="" style={styles.mbPrice} className="img-responsive center-block"/>
+                </a>
+            </div>
+            <div className="col-md-4">
+                <a href="https://www.facebook.com/Kickstandskitchen/" target="_blank" rel="noopener noreferrer">
+                    <img src={kickstandsLogo} alt="" style={styles.kickstands} className="img-responsive center-block" />
+                </a>
+            </div>
+            <div className="col-md-4">
+                <a href="https://www.flemingssteakhouse.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={flemingsLogo} alt="" style={styles.flemings} className="img-responsive center-block" />
+                </a>
+            </div>
           </div>
-          {/* <div className="col-md-12">
-                        <div className="col-md-4">
-                            <a href="https://www.facebook.com/Tchews/" target="_blank" rel="noopener noreferrer">
-                                <img src={tChewsLogo} alt="" style={styles.tChews} className="img-responsive center-block" />
-                            </a>
-                        </div>
-                        <div className="col-md-4">
-                            <a href="https://www.facebook.com/superiorconstructionla/?ref=br_rs" target="_blank" rel="noopener noreferrer">
-                                <img src={superiorConstructionLogo} alt="" style={styles.superiorConstruction} className="img-responsive center-block" />
-                            </a>
-                        </div>
-                        <div className="col-md-4">
-                            <a href="https://www.flemingssteakhouse.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={flemingsLogo} alt="" style={styles.flemings} className="img-responsive center-block" />
-                            </a>
-                        </div> 
-                    </div>
-                    <div className="col-md-12">
-                        <div className="col-md-4"></div>
-                        <div className="col-md-4">
-                            <a href="https://www.thechimes.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={chimesLogo} alt="" style={styles.chimes} class="img-responsive center-block" />
-                            </a>
-                        </div>
-                        <div className="col-md-4"></div>
-                    </div>  */}
         </div>
       </div>
       <div className="panel panel-warning text-center">
@@ -111,25 +92,10 @@ const sponsors = () => {
         </h2>
         <div className="panel-body">
         <div className="col-md-12">
-                            <a href="http://www.afd-furniture.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={americanFactoryDirectLogo} alt="" style={styles.americanFactoryDirect} class="img-responsive center-block" />
-                            </a>
-                        </div>
-          {/* <div className="col-md-12">
-                        <div className="col-md-6">
-                            <a href="http://www.natashaengle.com" target="_blank" rel="noopener noreferrer">
-                                <img src={natashaEngleLogo} alt="" style={styles.natashaEngle} class="img-responsive center-block" />
-                            </a>
-                        </div>
-                        <div className="col-md-6">
-                            <a href="http://www.afd-furniture.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={americanFactoryDirectLogo} alt="" style={styles.americanFactoryDirect} class="img-responsive center-block" />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="col-md-12">
-
-                    </div> */}
+            <a href="http://www.afd-furniture.com/" target="_blank" rel="noopener noreferrer">
+                <img src={americanFactoryDirectLogo} alt="" style={styles.americanFactoryDirect} class="img-responsive center-block" />
+            </a>
+        </div>
         </div>
       </div>
       {/* <div className="panel panel-info text-center">
@@ -145,45 +111,35 @@ const sponsors = () => {
           Food and Refreshments Provided By
         </h2>
         <div className="panel-body">
-          {/* <div className="col-md-12">
-                        <div className="col-md-4">
-                            <a href="https://la.crescentcrown.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={crescentCrownLogo} alt="" style={styles.crescent} class="img-responsive center-block" />
-                            </a>
-                        </div>
-                        <div className="col-md-4">
-                            <a href="http://londonerbr.com" target="_blank" rel="noopener noreferrer">
-                                <img src={theLondonerLogo} alt="" style={styles.theLondoner} class="img-responsive center-block" />
-                            </a>
-                        </div>
-                        <div className="col-md-4">
-                            <a href="http://www.louisianafishfry.com" target="_blank" rel="noopener noreferrer">
-                                <img src={louisianaFishFryLogo} alt="" style={styles.louisianaFishFry} class="img-responsive center-block" />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="col-md-12">
-                        <a href="https://lamadeleine.com/" target="_blank" rel="noopener noreferrer">
-                            <img src={laMadeleineLogo} alt="" style={styles.laMadeleine} class="img-responsive center-block" />
-                        </a>
-                    </div>
-                    <div className="col-md-12">
-                        <div className="col-md-4">
-                            <a href="https://www.raisingcanes.com" target="_blank" rel="noopener noreferrer">
-                                <img src={raisingCanesLogo} alt="" style={styles.raisingCanes} class="img-responsive center-block" />
-                            </a>
-                        </div>
-                        <div className="col-md-4">
-                            <a href="https://www.reginellis.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={reginellisLogo} alt="" style={styles.reginelli} class="img-responsive center-block" />
-                            </a>
-                        </div>
-                        <div className="col-md-4">
-                            <a href="https://us.coca-cola.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={cokeLogo} alt="" style={styles.coke} class="img-responsive center-block" />
-                            </a>
-                        </div>
-                    </div> */}
+              <div className="col-md-12">
+                <div className="col-md-4">
+                    <a href="https://la.crescentcrown.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={crescentCrownLogo} alt="" style={styles.crescent} class="img-responsive center-block" />
+                    </a>
+                </div>
+                <div className="col-md-4">
+                    <a href="http://www.hannahqsmokehouse.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={hannahQLogo} alt="" style={styles.hannahQ} class="img-responsive center-block" />
+                    </a>
+                </div>
+                <div className="col-md-4">
+                    <a href="http://www.louisianafishfry.com" target="_blank" rel="noopener noreferrer">
+                        <img src={louisianaFishFryLogo} alt="" style={styles.louisianaFishFry} class="img-responsive center-block" />
+                    </a>
+                </div>
+            </div>
+              <div className="col-md-12">
+                <div className="col-md-6">
+                    <a href="https://www.raisingcanes.com" target="_blank" rel="noopener noreferrer">
+                        <img src={raisingCanesLogo} alt="" style={styles.raisingCanes} class="img-responsive center-block" />
+                    </a>
+                </div>
+                <div className="col-md-6">
+                    <a href="https://us.coca-cola.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={cokeLogo} alt="" style={styles.coke} class="img-responsive center-block" />
+                    </a>
+                </div>
+            </div>
         </div>
       </div>
     </div>

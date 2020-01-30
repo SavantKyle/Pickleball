@@ -145,7 +145,7 @@ const information = () => {
           <h3>
             <strong>Food / Drink</strong>
           </h3>
-          <p>Fruits and donuts will be provided for breakfast each morning.</p>
+          <p>Fruits and donuts will be provided for breakfast.</p>
           <p>
             Bottled water will be provided with additional full water coolers
             for hydrating during the match.

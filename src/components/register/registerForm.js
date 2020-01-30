@@ -18,6 +18,7 @@ export class registerForm extends Component {
         crawfishGuestCount: 0,
         crawfishGuestPrice: 0,
         totalPrice: 0,
+        adjustedPrice: 0, 
         showPrice: false,
         mixedPartnerFirstName: '',
         mixedPartnerLastName: '',
@@ -185,19 +186,19 @@ export class registerForm extends Component {
         switch (event.target.id) {
             case "eventDoubles":
                 newVal = "Doubles";
-                newPrice = this.state.hasValidPromoCode ? eventPrice - 5 : eventPrice;
+                newPrice = eventPrice;
                 doubles = true;
                 mixed = false;
                 break;
             case "eventMixed":
                 newVal = "Mixed";
-                newPrice = this.state.hasValidPromoCode ? eventPrice - 5 : eventPrice;
+                newPrice = eventPrice;
                 doubles = false;
                 mixed = true;
                 break;
             case "eventBoth":
                 newVal = "Both";
-                newPrice = this.state.hasValidPromoCode ? eventPrice - 5 : eventPrice;
+                newPrice = eventPrice;
                 doubles = true;
                 mixed = true;
                 break;
@@ -211,21 +212,23 @@ export class registerForm extends Component {
         let crawfishGuestCount = event.target.value;
         let crawfishPrice = event.target.value * 20;
         let newTotalPrice = this.state.entryPrice + crawfishPrice;
-        this.setState({ totalPrice: newTotalPrice, crawfishGuestCount: crawfishGuestCount, crawfishGuestPrice: crawfishPrice });
+        let newAdjustedPrice = this.state.hasValidPromoCode 
+            ? newTotalPrice - 10
+            : newTotalPrice;
+        this.setState({ totalPrice: newTotalPrice, adjustedPrice: newAdjustedPrice, crawfishGuestCount: crawfishGuestCount, crawfishGuestPrice: crawfishPrice });
     }
 
     onPromoCodeChange = (event) => {
-        let adjustedPrice = this.state.totalPrice; 
+        let adjusted = this.state.totalPrice; 
         let valid = false; 
-        if (event.target.value.trim().toLowerCase() === 'tennis') {
+        if (event.target.value.trim().toLowerCase() === 'legacy') {
             valid = true;
-            adjustedPrice = this.state.totalPrice - 5; 
-        } else if (this.state.totalPrice === 55 || this.state.totalPrice === 65 || this.state.totalPrice === 75) {
-            valid = false; 
-            adjustedPrice = this.state.totalPrice + 5; 
+            adjusted -= 10;
+        } else {
+            adjusted = this.state.totalPrice;
         }
 
-        this.setState({ totalPrice: adjustedPrice, hasValidPromoCode: valid });
+        this.setState({ adjustedPrice: adjusted, hasValidPromoCode: valid });
     }
 
     onKeyPress(event) {
@@ -246,7 +249,9 @@ export class registerForm extends Component {
             const payload = {
                 playerInfo,
                 stripePaymentRequest: {
-                    amount: this.state.totalPrice,
+                    amount: this.state.totalPrice > this.state.adjustedPrice && this.state.adjustedPrice > 0
+                        ? this.state.adjustedPrice 
+                        : this.state.totalPrice,
                     description: `${this.state.firstName} ${this.state.lastName} - (${this.state.gender} Doubles:${this.state.ratingDoubles} Mixed:${this.state.ratingMixed})`,
                     receiptEmail: this.state.email,
                     tokenId: token.id
@@ -428,7 +433,9 @@ export class registerForm extends Component {
                                 <div className="text-center text-primary">
                                     <h3>
                                         <strong>
-                                            Total: ${this.state.totalPrice}
+                                            Total: ${this.state.totalPrice > this.state.adjustedPrice && this.state.adjustedPrice > 0
+                                                ? this.state.adjustedPrice 
+                                                : this.state.totalPrice}
                                         </strong>
                                     </h3>
                                 </div>
