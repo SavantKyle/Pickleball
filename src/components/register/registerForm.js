@@ -179,8 +179,8 @@ export class registerForm extends Component {
 
     onEventChange = (event) => {
         let newVal, newPrice, doubles, mixed;
-        let eventPrice = new Date() <= new Date('1/31/2020') ? 55 
-        : new Date() > new Date('1/31/2020') && new Date() <= new Date('2/29/2020') ? 65
+        let eventPrice = new Date() < new Date('2/1/2020') ? 55 
+        : new Date() > new Date('1/31/2020') && new Date() < new Date('3/1/2020') ? 65
         : 75;
         // let twoEventPrice = new Date() >= new Date('4/1/2019') ? 70 : 65;
         switch (event.target.id) {
