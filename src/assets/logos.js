@@ -10,6 +10,8 @@ import laMadeleineLogo from './laMadeleineLogo.png';
 import onixLogo from './OnixLogoWithDuraFast40.png'; 
 import mbPriceGeneralContractors from './MB_Price_Logo.png'; 
 import hannahQLogo from './HannahQ.png';
+import batonRougeDigitalProductsLogo from './batonRougeDigitalProducts.png';
+import jigsawHealthLogo from './JigsawHealth.png'; 
 
 export { 
     kickstandsLogo, 
@@ -23,5 +25,7 @@ export {
     crescentCrownLogo,
     laMadeleineLogo, 
     onixLogo, 
-    mbPriceGeneralContractors
+    mbPriceGeneralContractors, 
+    batonRougeDigitalProductsLogo, 
+    jigsawHealthLogo 
 } 
