@@ -8,7 +8,8 @@ import {
   crescentCrownLogo,
   hannahQLogo,
   batonRougeDigitalProductsLogo,
-  jigsawHealthLogo
+  jigsawHealthLogo,
+  chimesLogo
 } from "../../assets/logos";
 
 const sponsors = () => {
@@ -21,10 +22,11 @@ const sponsors = () => {
     crescent: { width: 175 },
     onix: { width: 550 },
     flemings: { width: 425, marginTop: 45 },
-    mbPrice: { width: 400, marginTop: 40 }, 
+    mbPrice: { width: 350, marginTop: 40 }, 
     hannahQ: { width: 450, marginTop: 50 }, 
     jigsawHealth: { width: 400 }, 
-    batonRougeDigitalProducts: { width: 550, marginTop: 90 }
+    batonRougeDigitalProducts: { width: 550, marginTop: 90 }, 
+    chimes: { width: 400, marginTop: 45 }
   };
 
   return (
@@ -72,9 +74,9 @@ const sponsors = () => {
         </h2>
         <div className="panel-body">
           <div className="col-md-12">
-          <div className="col-md-4">
-                <a href="http://www.mbpricecontractors.com/" target="_blank" rel="noopener noreferrer">
-                  <img src={mbPriceGeneralContractors} alt="" style={styles.mbPrice} className="img-responsive center-block"/>
+            <div className="col-md-4">
+                <a href="https://www.thechimes.com/" target="_blank" rel="noopener noreferrer">
+                  <img src={chimesLogo} alt="" style={styles.chimes} className="img-responsive center-block"/>
                 </a>
             </div>
             <div className="col-md-4">
@@ -85,6 +87,13 @@ const sponsors = () => {
             <div className="col-md-4">
                 <a href="https://www.flemingssteakhouse.com/" target="_blank" rel="noopener noreferrer">
                     <img src={flemingsLogo} alt="" style={styles.flemings} className="img-responsive center-block" />
+                </a>
+            </div>
+          </div>
+          <div className="col-md-12">
+            <div className="col-md-12">
+                <a href="http://www.mbpricecontractors.com/" target="_blank" rel="noopener noreferrer">
+                  <img src={mbPriceGeneralContractors} alt="" style={styles.mbPrice} className="img-responsive center-block"/>
                 </a>
             </div>
           </div>
