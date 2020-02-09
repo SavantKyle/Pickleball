@@ -9,7 +9,8 @@ import {
   hannahQLogo,
   batonRougeDigitalProductsLogo,
   jigsawHealthLogo,
-  chimesLogo
+  chimesLogo, 
+  pubOnSherwoodLogo
 } from "../../assets/logos";
 
 const sponsors = () => {
@@ -23,10 +24,11 @@ const sponsors = () => {
     onix: { width: 550 },
     flemings: { width: 425, marginTop: 45 },
     mbPrice: { width: 350, marginTop: 40 }, 
-    hannahQ: { width: 450, marginTop: 50 }, 
+    hannahQ: { width: 450, marginTop: 60 }, 
     jigsawHealth: { width: 400 }, 
     batonRougeDigitalProducts: { width: 550, marginTop: 90 }, 
-    chimes: { width: 400, marginTop: 45 }
+    chimes: { width: 400, marginTop: 45 }, 
+    pubOnSherwood: { width: 300, marginTop: 40 }
   };
 
   return (
@@ -125,13 +127,25 @@ const sponsors = () => {
         <div className="panel-body">
               <div className="col-md-12">
                 <div className="col-md-4">
+                    <a href="http://www.hannahqsmokehouse.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={hannahQLogo} alt="" style={styles.hannahQ} class="img-responsive center-block" />
+                    </a>
+                </div>
+                <div className="col-md-4">
                     <a href="https://la.crescentcrown.com/" target="_blank" rel="noopener noreferrer">
                         <img src={crescentCrownLogo} alt="" style={styles.crescent} class="img-responsive center-block" />
                     </a>
                 </div>
                 <div className="col-md-4">
-                    <a href="http://www.hannahqsmokehouse.com/" target="_blank" rel="noopener noreferrer">
-                        <img src={hannahQLogo} alt="" style={styles.hannahQ} class="img-responsive center-block" />
+                    <a href="http://www.pubonsherwood.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={pubOnSherwoodLogo} alt="" style={styles.pubOnSherwood} class="img-responsive center-block" />
+                    </a>
+                </div>
+            </div>
+              <div className="col-md-12">
+                <div className="col-md-4">
+                    <a href="https://www.raisingcanes.com" target="_blank" rel="noopener noreferrer">
+                        <img src={raisingCanesLogo} alt="" style={styles.raisingCanes} class="img-responsive center-block" />
                     </a>
                 </div>
                 <div className="col-md-4">
@@ -139,14 +153,7 @@ const sponsors = () => {
                         <img src={louisianaFishFryLogo} alt="" style={styles.louisianaFishFry} class="img-responsive center-block" />
                     </a>
                 </div>
-            </div>
-              <div className="col-md-12">
-                <div className="col-md-6">
-                    <a href="https://www.raisingcanes.com" target="_blank" rel="noopener noreferrer">
-                        <img src={raisingCanesLogo} alt="" style={styles.raisingCanes} class="img-responsive center-block" />
-                    </a>
-                </div>
-                <div className="col-md-6">
+                <div className="col-md-4">
                     <a href="https://us.coca-cola.com/" target="_blank" rel="noopener noreferrer">
                         <img src={cokeLogo} alt="" style={styles.coke} class="img-responsive center-block" />
                     </a>

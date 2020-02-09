@@ -12,6 +12,7 @@ import mbPriceGeneralContractors from './MB_Price_Logo.png';
 import hannahQLogo from './HannahQ.png';
 import batonRougeDigitalProductsLogo from './batonRougeDigitalProducts.png';
 import jigsawHealthLogo from './JigsawHealth.png'; 
+import pubOnSherwoodLogo from './PubOnSherwoodLogo.jpg'; 
 
 export { 
     kickstandsLogo, 
@@ -27,5 +28,6 @@ export {
     onixLogo, 
     mbPriceGeneralContractors, 
     batonRougeDigitalProductsLogo, 
-    jigsawHealthLogo 
+    jigsawHealthLogo, 
+    pubOnSherwoodLogo
 } 
