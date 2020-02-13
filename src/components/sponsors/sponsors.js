@@ -10,7 +10,8 @@ import {
   batonRougeDigitalProductsLogo,
   jigsawHealthLogo,
   chimesLogo, 
-  pubOnSherwoodLogo
+  pubOnSherwoodLogo, 
+  reginelliLogo
 } from "../../assets/logos";
 
 const sponsors = () => {
@@ -20,15 +21,16 @@ const sponsors = () => {
     louisianaFishFry: { width: 325 },
     coke: { width: 300, marginTop: 50, marginBottom: 40 },
     americanFactoryDirect: { width: 550 },
-    crescent: { width: 175 },
+    crescent: { width: 175, marginTop: 20 },
     onix: { width: 550 },
     flemings: { width: 425, marginTop: 45 },
     mbPrice: { width: 350, marginTop: 40 }, 
-    hannahQ: { width: 450, marginTop: 60 }, 
+    hannahQ: { width: 450 }, 
     jigsawHealth: { width: 400 }, 
     batonRougeDigitalProducts: { width: 550, marginTop: 90 }, 
     chimes: { width: 400, marginTop: 45 }, 
-    pubOnSherwood: { width: 300, marginTop: 40 }
+    pubOnSherwood: { width: 300 }, 
+    reginelli: { width: 300 }
   };
 
   return (
@@ -132,8 +134,8 @@ const sponsors = () => {
                     </a>
                 </div>
                 <div className="col-md-4">
-                    <a href="https://la.crescentcrown.com/" target="_blank" rel="noopener noreferrer">
-                        <img src={crescentCrownLogo} alt="" style={styles.crescent} class="img-responsive center-block" />
+                    <a href="https://www.reginellis.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={reginelliLogo} alt="" style={styles.reginelli} class="img-responsive center-block" />
                     </a>
                 </div>
                 <div className="col-md-4">
@@ -158,6 +160,11 @@ const sponsors = () => {
                         <img src={cokeLogo} alt="" style={styles.coke} class="img-responsive center-block" />
                     </a>
                 </div>
+            </div>
+            <div className="col-md-12">
+                <a href="https://la.crescentcrown.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={crescentCrownLogo} alt="" style={styles.crescent} class="img-responsive center-block" />
+                </a>
             </div>
         </div>
       </div>
