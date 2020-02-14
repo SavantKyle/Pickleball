@@ -12,7 +12,8 @@ import {
   chimesLogo, 
   pubOnSherwoodLogo, 
   reginelliLogo, 
-  ronniesLogo
+  ronniesLogo, 
+  advancedExteriorsLogo
 } from "../../assets/logos";
 
 const sponsors = () => {
@@ -24,15 +25,16 @@ const sponsors = () => {
     americanFactoryDirect: { width: 550 },
     crescent: { width: 175, marginTop: 20 },
     onix: { width: 550 },
-    flemings: { width: 425, marginTop: 45 },
-    mbPrice: { width: 350, marginTop: 40 }, 
+    flemings: { width: 425, marginTop: 25 },
+    mbPrice: { width: 325, marginTop: 40 }, 
     hannahQ: { width: 450 }, 
     jigsawHealth: { width: 400 }, 
     batonRougeDigitalProducts: { width: 550, marginTop: 50 }, 
-    chimes: { width: 400, marginTop: 45 }, 
+    chimes: { width: 385, marginTop: 20 }, 
     pubOnSherwood: { width: 300 }, 
     reginelli: { width: 300 }, 
-    ronnies: { width: 300 }
+    ronnies: { width: 300 }, 
+    advancedExteriors: { width: 300, marginTop: 20 }
   };
 
   return (
@@ -81,8 +83,8 @@ const sponsors = () => {
         <div className="panel-body">
           <div className="col-md-12">
             <div className="col-md-4">
-                <a href="https://www.thechimes.com/" target="_blank" rel="noopener noreferrer">
-                  <img src={chimesLogo} alt="" style={styles.chimes} className="img-responsive center-block"/>
+                <a href="/" target="_blank" rel="noopener noreferrer">
+                  <img src={advancedExteriorsLogo} alt="" style={styles.advancedExteriors} className="img-responsive center-block"/>
                 </a>
             </div>
             <div className="col-md-4">
@@ -97,9 +99,14 @@ const sponsors = () => {
             </div>
           </div>
           <div className="col-md-12">
-            <div className="col-md-12">
+            <div className="col-md-6">
                 <a href="http://www.mbpricecontractors.com/" target="_blank" rel="noopener noreferrer">
                   <img src={mbPriceGeneralContractors} alt="" style={styles.mbPrice} className="img-responsive center-block"/>
+                </a>
+            </div>
+            <div className="col-md-6">
+                <a href="https://www.thechimes.com/" target="_blank" rel="noopener noreferrer">
+                  <img src={chimesLogo} alt="" style={styles.chimes} className="img-responsive center-block"/>
                 </a>
             </div>
           </div>

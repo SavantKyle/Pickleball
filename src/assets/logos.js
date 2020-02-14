@@ -15,6 +15,7 @@ import jigsawHealthLogo from './JigsawHealth.png';
 import pubOnSherwoodLogo from './PubOnSherwoodLogo.jpg'; 
 import reginelliLogo from './ReginellisLogo_ForWeb.png';
 import ronniesLogo from './RonniesLogo.png'; 
+import advancedExteriorsLogo from './AdvancedExteriors_includingNumber.png';
 
 export { 
     kickstandsLogo, 
@@ -33,5 +34,6 @@ export {
     jigsawHealthLogo, 
     pubOnSherwoodLogo, 
     reginelliLogo, 
-    ronniesLogo
+    ronniesLogo, 
+    advancedExteriorsLogo
 } 
