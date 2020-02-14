@@ -83,9 +83,9 @@ const sponsors = () => {
         <div className="panel-body">
           <div className="col-md-12">
             <div className="col-md-4">
-                <a href="/" target="_blank" rel="noopener noreferrer">
+                {/* <a href="/" target="_blank" rel="noopener noreferrer"> */}
                   <img src={advancedExteriorsLogo} alt="" style={styles.advancedExteriors} className="img-responsive center-block"/>
-                </a>
+                {/* </a> */}
             </div>
             <div className="col-md-4">
                 <a href="https://www.facebook.com/Kickstandskitchen/" target="_blank" rel="noopener noreferrer">
