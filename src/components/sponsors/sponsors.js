@@ -11,7 +11,8 @@ import {
   jigsawHealthLogo,
   chimesLogo, 
   pubOnSherwoodLogo, 
-  reginelliLogo
+  reginelliLogo, 
+  ronniesLogo
 } from "../../assets/logos";
 
 const sponsors = () => {
@@ -27,10 +28,11 @@ const sponsors = () => {
     mbPrice: { width: 350, marginTop: 40 }, 
     hannahQ: { width: 450 }, 
     jigsawHealth: { width: 400 }, 
-    batonRougeDigitalProducts: { width: 550, marginTop: 90 }, 
+    batonRougeDigitalProducts: { width: 550, marginTop: 50 }, 
     chimes: { width: 400, marginTop: 45 }, 
     pubOnSherwood: { width: 300 }, 
-    reginelli: { width: 300 }
+    reginelli: { width: 300 }, 
+    ronnies: { width: 300 }
   };
 
   return (
@@ -109,14 +111,19 @@ const sponsors = () => {
         </h2>
         <div className="panel-body">
         <div className="col-md-12">
-          <div className="col-md-6">
-            <a href="http://www.afd-furniture.com/" target="_blank" rel="noopener noreferrer">
-                <img src={americanFactoryDirectLogo} alt="" style={styles.americanFactoryDirect} class="img-responsive center-block" />
+          <div className="col-md-4">
+            <a href="http://ronniesboudin.com/" target="_blank" rel="noopener noreferrer">
+                <img src={ronniesLogo} alt="" style={styles.ronnies} class="img-responsive center-block" />
             </a>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-4">
             <a href="https://www.brdp.com/" target="_blank" rel="noopener noreferrer">
                 <img src={batonRougeDigitalProductsLogo} alt="" style={styles.batonRougeDigitalProducts} class="img-responsive center-block" />
+            </a>
+          </div>
+          <div className="col-md-4">
+            <a href="http://www.afd-furniture.com/" target="_blank" rel="noopener noreferrer">
+                <img src={americanFactoryDirectLogo} alt="" style={styles.americanFactoryDirect} class="img-responsive center-block" />
             </a>
           </div>
         </div>

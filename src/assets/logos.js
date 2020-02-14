@@ -14,6 +14,7 @@ import batonRougeDigitalProductsLogo from './batonRougeDigitalProducts.png';
 import jigsawHealthLogo from './JigsawHealth.png'; 
 import pubOnSherwoodLogo from './PubOnSherwoodLogo.jpg'; 
 import reginelliLogo from './ReginellisLogo_ForWeb.png';
+import ronniesLogo from './RonniesLogo.png'; 
 
 export { 
     kickstandsLogo, 
@@ -31,5 +32,6 @@ export {
     batonRougeDigitalProductsLogo, 
     jigsawHealthLogo, 
     pubOnSherwoodLogo, 
-    reginelliLogo
+    reginelliLogo, 
+    ronniesLogo
 } 
