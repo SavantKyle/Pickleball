@@ -227,6 +227,9 @@ export class registerForm extends Component {
         } else if (event.target.value.trim().toLowerCase() === 'slidell' && new Date() < new Date('2/8/2020')) {
             valid = true;
             adjusted -= 10;
+        } else if (event.target.value.trim().toLowerCase() === 'crawfish' && new Date() < new Date('3/1/2020')) {
+            valid = true;
+            adjusted -= 10;
         } else {
             adjusted = this.state.totalPrice;
         }
