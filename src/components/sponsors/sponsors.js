@@ -1,19 +1,10 @@
 import React from "react";
 import {
-  onixLogo,
-  mbPriceGeneralContractors, 
-  americanFactoryDirectLogo, 
-  flemingsLogo,
+  onixLogo, mbPriceGeneralContractors, americanFactoryDirectLogo, flemingsLogo,
   kickstandsLogo, raisingCanesLogo, louisianaFishFryLogo, cokeLogo,
-  crescentCrownLogo,
-  hannahQLogo,
-  batonRougeDigitalProductsLogo,
-  jigsawHealthLogo,
-  chimesLogo, 
-  pubOnSherwoodLogo, 
-  reginelliLogo, 
-  ronniesLogo, 
-  advancedExteriorsLogo
+  crescentCrownLogo, hannahQLogo, batonRougeDigitalProductsLogo,
+  jigsawHealthLogo, chimesLogo, pubOnSherwoodLogo, reginelliLogo, 
+  ronniesLogo, advancedExteriorsLogo, laMadeleineLogo
 } from "../../assets/logos";
 
 const sponsors = () => {
@@ -32,9 +23,10 @@ const sponsors = () => {
     batonRougeDigitalProducts: { width: 550, marginTop: 50 }, 
     chimes: { width: 385, marginTop: 20 }, 
     pubOnSherwood: { width: 300 }, 
-    reginelli: { width: 300 }, 
+    reginelli: { width: 300, marginTop: 60 }, 
     ronnies: { width: 300 }, 
-    advancedExteriors: { width: 300, marginTop: 20 }
+    advancedExteriors: { width: 300, marginTop: 20 }, 
+    laMadeleine: { width: 400, marginTop: 20}, 
   };
 
   return (
@@ -52,18 +44,18 @@ const sponsors = () => {
           (225)202-3048.
         </p>
       </div>
-      <div className="panel panel-default text-center">
+      {/* <div className="panel panel-default text-center">
         <h2 className="panel-heading" style={{ margin: "0px" }}>
           Presenting Sponsors
         </h2>
-        {/*    <div className="panel-body">
+           <div className="panel-body">
                     <div className="col-md-12">
                         <a href="http://www.transformyx.com/" target="_blank" rel="noopener noreferrer">
                             <img src={transformyxLogo} alt="" style={styles.transformyx} className="img-responsive center-block" />
                         </a>
                     </div>
-                </div> */}
-      </div>
+                </div>
+      </div> */}
       <div className="panel panel-primary text-center">
         <h2 className="panel-heading" style={{ margin: "0px" }}>
           Tournament Balls Provided by 
@@ -148,8 +140,8 @@ const sponsors = () => {
                     </a>
                 </div>
                 <div className="col-md-4">
-                    <a href="https://www.reginellis.com/" target="_blank" rel="noopener noreferrer">
-                        <img src={reginelliLogo} alt="" style={styles.reginelli} class="img-responsive center-block" />
+                    <a href="https://www.lamadeleine.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={laMadeleineLogo} alt="" style={styles.laMadeleine} class="img-responsive center-block" />
                     </a>
                 </div>
                 <div className="col-md-4">
@@ -170,15 +162,22 @@ const sponsors = () => {
                     </a>
                 </div>
                 <div className="col-md-4">
-                    <a href="https://us.coca-cola.com/" target="_blank" rel="noopener noreferrer">
-                        <img src={cokeLogo} alt="" style={styles.coke} class="img-responsive center-block" />
+                    <a href="https://www.reginellis.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={reginelliLogo} alt="" style={styles.reginelli} class="img-responsive center-block" />
                     </a>
                 </div>
             </div>
             <div className="col-md-12">
+              <div className="col-md-6">
                 <a href="https://la.crescentcrown.com/" target="_blank" rel="noopener noreferrer">
                     <img src={crescentCrownLogo} alt="" style={styles.crescent} class="img-responsive center-block" />
                 </a>
+              </div>
+                <div className="col-md-6">
+                    <a href="https://us.coca-cola.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={cokeLogo} alt="" style={styles.coke} class="img-responsive center-block" />
+                    </a>
+                </div>
             </div>
         </div>
       </div>
