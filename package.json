@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
-    "bootstrap": "^3.4.0",
+    "bootstrap": "^3.4.1",
     "font-awesome": "^4.7.0",
     "git": "^0.1.5",
     "react": "^16.7.0",
